@@ -1,7 +1,7 @@
 function FindProxyForURL(url, host) {
     // Домены YouTube и связанные сервисы
     const domains = [
-        "chatgpt.com"
+        ".com"
     ];
     for (const domain of domains) {
         if (host.includes(domain)) {
