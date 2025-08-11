@@ -4,7 +4,7 @@ function FindProxyForURL(url, host) {
         "chatgpt.com"
     ];
     for (const domain of domains) {
-        if (host.contains(domain)) {
+        if (host.includes(domain)) {
             return "SOCKS5 127.0.0.1:9999";
         }
     }
